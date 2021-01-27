@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600;800&display=swap');
+
+
+body, html {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    height: 1920px;
+    width: 1200px;
+}
+.grid-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      ".";
+  }
+
+.header {
+    display: flex;
+    position: relative;
+}
+.header * {
+    padding: 5%;
+    color: black;
+}
+.header #title {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+
+    font-size: 2em;
+    font-weight: 800;
+}
+.header #date {
+    font-size: 2em;
+}
+
+.verse {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.verse div {
+    width: 80%;
+    padding: 2% 0;
+    text-align: center;
+    font-size: 3em;
+}
+
+.reference {
+    display: flex;
+    justify-content: center;
+}
+.reference * {
+    flex: 1;
+    padding: 0 0.5em;
+}
+.reference .books div {
+    font-size: 2em;
+    text-align: right;
+    font-weight: 600;
+}
+.reference #nums {
+    font-size: 5em;
+    font-weight: 800;
+}
+
+.hindi {
+    font-family: 'Poppins', sans-serif; 
+}
+.telugu {
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+}
